@@ -23,35 +23,40 @@
                     </div>
                 </div>
             </fieldset>
-            <div>
-                <div>
-                    <input type="radio" id="thin" name="crust">
-                    <label for="thin">Thin</label>
-                </div>
-                <div>
-                    <input type="radio" id="stuffed" name="crust">
-                    <label for="stuffed">Stuffed</label>
-                </div>
-                <div>
-                    <input type="radio" id="-" name="crust">
-                    <label for="-">-</label>
-                </div>
+            <div class="row">
+                <fieldset>
+                    <legend>Crust:</legend>
+                    <div>
+                        <input type="radio" id="regular" name="crust">
+                        <label for="regular">Regular</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="thin" name="crust">
+                        <label for="thin">Thin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="stuffed" name="crust">
+                        <label for="stuffed">Stuffed</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="large">
+                        <label for="large">Large</label>
+                    </div>
+                </fieldset>
             </div>
-            <div>
-                <div>
-                    <input type="radio" id="small" name="size">
-                    <label for="small">Small</label>
-                </div>
-                <div>
-                    <input type="radio" id="medium" name="medium">
-                    <label for="medium">Medium</label>
-                </div>
-                <div>
-                    <input type="radio" id="large" name="large">
-                    <label for="large">Large</label>
-                </div>
-            </div>
-            <div>
+            <fieldset>
+                <legend>Toppings:</legend>
                 <div>
                     <input type="checkbox" id="top1" name="top1" value="top1">
                     <label for="top1">topping1</label>
@@ -64,20 +69,36 @@
                     <input type="checkbox" id="top3" name="top3" value="top3">
                     <label for="top3">topping3</label>
                 </div>
-            </div>
-            <div>
-                <label for="container">--</label>
+                <div>
+                    <input type="checkbox" id="top4" name="top4" value="top4">
+                    <label for="top4">topping4</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="top5" name="top5" value="top5">
+                    <label for="top5">topping5</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="top6" name="top6" value="top6">
+                    <label for="top6">topping6</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Slices:</legend>
+                <label for="container">Please Choose One</label>
                 <select name="container" id="container">
-                    <option value="opt1">opt1</option>
-                    <option value="opt2">opt2</option>
-                    <option value="opt3">opt3</option>
+                    <option value="four">Fourths</option>
+                    <option value="six">Sixths</option>
+                    <option value="eight">Eighths</option>
                     <option value="opt4">opt4</option>
                 </select>
-            </div>
-
-
-
-
+            </fieldset>
+            <fieldset>
+                <legend>Special:</legend>
+                <label for="SpecialRequests">Special Requests:</label>
+                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="More cheese, more sauce, etc."></textarea>
+            </fieldset>
+            <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+            <button type="submit">Submit Order</button>
         </form>
     </div>
 </div>
