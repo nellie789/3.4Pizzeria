@@ -23,22 +23,14 @@
                     </div>
                 </div>
             </fieldset>
+            <fieldset>
+                <legend>Address:</legend>
+                <div>
+                    <label for="address">Please Enter Address</label>
+                    <input id="address" name="address" type="address"
+                </div>
+            </fieldset>
             <div class="row">
-                <fieldset>
-                    <legend>Crust:</legend>
-                    <div>
-                        <input type="radio" id="regular" name="crust">
-                        <label for="regular">Regular</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="thin" name="crust">
-                        <label for="thin">Thin</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="stuffed" name="crust">
-                        <label for="stuffed">Stuffed</label>
-                    </div>
-                </fieldset>
                 <fieldset>
                     <legend>Size:</legend>
                     <div>
@@ -54,34 +46,62 @@
                         <label for="large">Large</label>
                     </div>
                 </fieldset>
+                <fieldset>
+                    <legend>Crust:</legend>
+                    <div>
+                        <input type="radio" id="tossed" name="tossed">
+                        <label for="tossed">Hand Tossed</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="thin" name="crust">
+                        <label for="thin">Thin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="stuffed" name="crust">
+                        <label for="stuffed">Stuffed</label>
+                    </div>
+                </fieldset>
             </div>
-            <fieldset>
-                <legend>Toppings:</legend>
-                <div>
-                    <input type="checkbox" id="top1" name="top1" value="top1">
-                    <label for="top1">topping1</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="top2" name="top2" value="top2">
-                    <label for="top2">topping2</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="top3" name="top3" value="top3">
-                    <label for="top3">topping3</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="top4" name="top4" value="top4">
-                    <label for="top4">topping4</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="top5" name="top5" value="top5">
-                    <label for="top5">topping5</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="top6" name="top6" value="top6">
-                    <label for="top6">topping6</label>
-                </div>
-            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Meat Toppings:</legend>
+                    <div>
+                        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                        <label for="sausage">Sausage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="salami" name="salami" value="salami">
+                        <label for="salami">Salami</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chicken" name="chicken" value="chicken">
+                        <label for="chicken">Chicken</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <div>
+                        <input type="checkbox" id="mushroom" name="mushroom" value="mushroom">
+                        <label for="mushroom">Mushroom</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="olives" name="olives" value="olives">
+                        <label for="olives">Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pepper" name="pepper" value="pepper">
+                        <label for="pepper">Pepper</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+                        <label for="pineapple">Pineapple</label>
+                    </div>
+                </fieldset>
+            </div>
             <fieldset>
                 <legend>Slices:</legend>
                 <label for="container">Please Choose One</label>
@@ -89,13 +109,13 @@
                     <option value="four">Fourths</option>
                     <option value="six">Sixths</option>
                     <option value="eight">Eighths</option>
-                    <option value="opt4">opt4</option>
+                    <option value="squares">Square Cuts</option>
                 </select>
             </fieldset>
             <fieldset>
                 <legend>Special:</legend>
                 <label for="SpecialRequests">Special Requests:</label>
-                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="More cheese, more sauce, etc."></textarea>
+                <textarea id="SpecialRequests" name="SpecialRequests" rows="5" cols="10" placeholder="More cheese, more sauce, different toppings, etc."></textarea>
             </fieldset>
             <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
             <button type="submit">Submit Order</button>

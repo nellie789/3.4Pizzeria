@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #f3f4f6;
+    background: #FAFFC4;
 }
 
 label {
@@ -10,20 +10,20 @@ label {
     line-height: 1.25rem;
     font-weight: 500;
     font-size: 14px;
-    color: #374151;
+    color: #4F5957;
 }
 
 input[type="text"], textarea, select{
     font-size: .875rem;
     line-height: 1.25rem;
-    border: 1px solid #d1d5db;
+    border: 1px solid #4F5957;
     border-radius: 6px;
     padding: 8px 12px;
     margin-bottom: 12px;
-    color: #374151;
+    color: #4F5957;
 }
 fieldset{
-    border: 1px solid #d1d5db;
+    border: 1px solid #F7B474;
     border-radius: 6px;
     width: fit-content;
     margin-bottom: 16px;
@@ -33,7 +33,7 @@ fieldset{
 
 fieldset legend{
     font-size: 14px;
-    color: #374151;
+    color: #2A2373;
 }
 
 input[type="checkbox"]{
